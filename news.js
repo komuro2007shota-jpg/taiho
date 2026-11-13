@@ -3,5 +3,5 @@
 // 投稿例（下の [] の中に貼り付け、内容を変更してください）:
 // { date: "2026-10-12", title: "お知らせのタイトル", body: "お知らせの本文" },
 window.TAIHO_NEWS = [
-  {"date": "2026-10-12", "title": "公式ホームページ開設のお知らせ", "body": "元祖塩ホルモン大豊の公式ホームページを開設しました。\nお品書きや営業時間、店舗情報をご覧いただけます。\nこちらのニュース欄では、お店からのお知らせを随時お届けしていきます。\nこれからも元祖塩ホルモン大豊をよろしくお願いいたします。"},
+  {"date": "2026-10-12", "title_en": "Our Official Website Is Now Open", "body_en": "Welcome to the official website of Ganso Shio Horumon Taiho.\nExplore our menu, opening hours and restaurant information.\nWe will share our latest news here.\nWe look forward to welcoming you!", "title": "公式ホームページ開設のお知らせ", "body": "元祖塩ホルモン大豊の公式ホームページを開設しました。\nお品書きや営業時間、店舗情報をご覧いただけます。\nこちらのニュース欄では、お店からのお知らせを随時お届けしていきます。\nこれからも元祖塩ホルモン大豊をよろしくお願いいたします。"},
 ];

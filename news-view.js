@@ -17,8 +17,12 @@
     date.textContent = post.date.replaceAll('-', '.');
     const title = document.createElement('h3');
     title.textContent = post.title;
+    title.dataset.newsJa = post.title;
+    if (post.title_en) title.dataset.newsEn = post.title_en;
     const body = document.createElement('p');
     body.textContent = post.body;
+    body.dataset.newsJa = post.body;
+    if (post.body_en) body.dataset.newsEn = post.body_en;
     card.append(date, title, body);
     return card;
   });
