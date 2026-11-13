@@ -35,10 +35,10 @@
     document.title = english ? dictionary[title] : title;
     attributes.forEach(({element, ja, en}) => element.setAttribute('aria-label', english ? en : ja));
     if (meta) meta.content = english ? 'Taiho, a Showa-style Japanese BBQ restaurant in Omachi, Koriyama. Open 18:00–24:00. Closed Tuesdays.' : metaJa;
-    document.querySelectorAll('[data-language]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.language === language)));
+    document.getElementById('language-select').value = language;
     try { localStorage.setItem('taiho-language', language); } catch (_) {}
   }
-  document.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.language)));
+  document.getElementById('language-select').addEventListener('change', event => setLanguage(event.target.value));
   let language = 'ja';
   try { if (localStorage.getItem('taiho-language') === 'en') language = 'en'; } catch (_) {}
   setLanguage(language);
