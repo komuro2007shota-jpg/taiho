@@ -28,3 +28,5 @@ GitHub で `news.js` を開き、鉛筆アイコンから編集します。`wind
 右上の日本語 / English プルダウンで切り替えます。選択はブラウザに保存します。ロゴ画像は元の日本語のままです。翻訳は translations.js に記載しています。ニュースには任意で title_en と body_en を追加します。英訳未登録のニュースは日本語で表示します。
 
 ロリポップへは index.html、style.css、news.js、news-view.js、translations.js、language.js と assets フォルダを同じ公開フォルダへアップロードしてください。
+
+中国語（簡体字）も言語プルダウンから選択できます。翻訳は translations.js の TAIHO_TRANSLATIONS_ZH、ニュースの中国語は title_zh / body_zh に記載します。未翻訳の記事は日本語で表示します。

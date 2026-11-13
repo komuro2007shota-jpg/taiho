@@ -19,10 +19,12 @@
     title.textContent = post.title;
     title.dataset.newsJa = post.title;
     if (post.title_en) title.dataset.newsEn = post.title_en;
+    if (post.title_zh) title.dataset.newsZh = post.title_zh;
     const body = document.createElement('p');
     body.textContent = post.body;
     body.dataset.newsJa = post.body;
     if (post.body_en) body.dataset.newsEn = post.body_en;
+    if (post.body_zh) body.dataset.newsZh = post.body_zh;
     card.append(date, title, body);
     return card;
   });
